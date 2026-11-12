@@ -1,0 +1,94 @@
+
+.second-header {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 15px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+.header-container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header-logo img {
+    height: 80px; 
+    object-fit: contain;
+}
+
+
+.header-nav .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav .nav-links a {
+    text-decoration: none;
+    color: #2c2c2c;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 4px; 
+    transition: color 0.2s ease;
+}
+
+.header-nav .nav-links a:hover {
+    color: #ed8b2c;
+}
+
+
+
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.language-selector {
+    color: #666;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.chevron-down {
+    font-size: 12px;
+    transform: scaleX(1.2); 
+}
+
+.login-link {
+    text-decoration: none;
+    color: #2c2c2c;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.signup-btn {
+    background-color: #f09333; 
+    color: #ffffff;
+    border: none;
+    padding: 10px 28px;
+    border-radius: 25px; 
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.signup-btn:hover {
+    background-color: #d67c24; 
+}
+
+.signup-btn:active {
+    transform: scale(0.97); 
+}

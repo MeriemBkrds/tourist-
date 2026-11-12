@@ -1,0 +1,89 @@
+.head{
+    background-color:#FFFFFF33;
+   
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    color: white;
+  
+
+}
+.area-head{
+    
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-head{
+   
+    height: 118px;
+    width: 118px;
+}
+.logo-head > img{
+    background-position: center;
+    height: 110px;
+    width: 110px;
+    background-repeat: no-repeat;
+
+    
+}
+.list-head > ul{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 518px;
+    gap:24px;
+
+
+}
+.login-head>ul{
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    width: 200px;
+}
+#btn {
+    background-color: #FA8B02;
+    border-radius: 50px;
+    width: 168px;
+    padding: 10px 24px 10px 24px;
+    color: white;
+    border: none;
+   
+
+
+}
+.nav-links {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+    align-items: center;
+    color: white;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FA8B02;
+}

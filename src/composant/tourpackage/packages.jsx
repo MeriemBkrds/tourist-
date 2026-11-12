@@ -1,0 +1,11 @@
+import React,
+ { useState, useEffect } from "react"; 
+ import "./packages.css"; import Secondhead from "../../utils/secondhead/secondhead"; 
+ import Booking from "../../utils/booking/booking";
+  import Foot from "../../utils/footer/footer";
+  function TourPackages() { const [packages, setPackages] = useState([]); 
+  const [visibleCards, setVisibleCards] = useState(9); 
+    const [loading, setLoading] = useState(true);
+     useEffect(() => { fetch('https://dummyjson.com/products') .then(res => res.json()) .then(data => { setPackages(data.products); setLoading(false); }) .catch(error => { console.error("Error fetching data:", error); 
+      setLoading(false); }); }, []); const handleLoadMore = () => { setVisibleCards(prevCount => prevCount + 9); }; 
+      const truncateText = (text, maxLength) => { if (text.length <= maxLength) return text; return text.substring(0, maxLength) + '...'; }; if (loading) { return <div className="loading-state">Loading packages...</div>; } return ( <> <Secondhead/> <section className="tour-packages-section"> <div className="container"> <h2 className="section-title">Tour Packages</h2> <div className="packages-grid"> {packages.slice(0, visibleCards).map((pkg) => ( <div className="package-card" key={pkg.id}> <div className="card-image-wrapper"> <img src={pkg.thumbnail} alt={pkg.title} /> </div> <div className="card-content"> <h3 className="card-title">{pkg.title}</h3> <div className="card-price"> <span className="price-label">from</span> <span className="price-value">{pkg.price} €</span> </div> <div className="card-meta"> <span className="meta-item"> <i className="calendar-icon">📅</i> EVERY DAY </span> <span className="meta-item"> <i className="people-icon">👥</i> 3-10 PP </span> </div> <p className="card-desc"> {truncateText(pkg.description, 70)} </p> <button className="read-more-btn"> Read More <span>→</span> </button> </div> </div> ))} </div> {visibleCards < packages.length && ( <div className="pagination-container"> <button className="load-more-btn" onClick={handleLoadMore}> Load More Packages </button> </div> )} </div> </section> <Booking/> <Foot/> </> ); } export default TourPackages;

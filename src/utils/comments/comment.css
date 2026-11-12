@@ -1,0 +1,141 @@
+
+.comments-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.comments-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #dcdcdc; 
+}
+
+.comments-title {
+  color: #333;
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.comments-nav {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.nav-btn.prev {
+  background-color: #f0f0f0;
+  color: #999;
+  cursor: not-allowed;
+}
+
+
+.nav-btn.next {
+  background-color: #f18c30;
+  color: white;
+}
+
+.nav-btn.next:hover {
+  background-color: #e07a20;
+  transform: scale(1.05);
+}
+
+
+.comments-grid{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: nowrap;
+}
+
+.comment-card{
+    width: calc(50% - 15px);
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid #e8e8e8;
+    padding: 30px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.04);
+}
+
+
+
+
+
+.comment-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.profile-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.profile-name {
+  margin: 0;
+  color: #444;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+
+.comment-body {
+  position: relative;
+  padding: 10px 20px;
+}
+
+.comment-text {
+  color: #555;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  text-align: left;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+
+.quote-mark {
+  position: absolute;
+  font-size: 5rem;
+  font-family: Georgia, serif;
+  color: #faebd7; 
+  line-height: 1;
+  z-index: 0;
+}
+
+.top-quote {
+  top: -20px;
+  left: -10px;
+}
+
+.bottom-quote {
+  bottom: -40px;
+  right: -10px;
+}
+

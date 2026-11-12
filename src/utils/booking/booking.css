@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.booking {
+    width: 100%;
+    background: linear-gradient(to right, #ffd5b0, #ffb287);
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.booking h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2f2f2f;
+    margin-bottom: 35px;
+}
+
+.booking-container {
+    width: 90%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.booking-form {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.28);
+    border-radius: 25px;
+    padding: 35px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.input-box input,
+.input-box select {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: #fff;
+    padding: 0 18px;
+    font-size: 15px;
+    color: #666;
+}
+
+.input-box input::placeholder {
+    color: #aaa;
+}
+
+.book-btn {
+    grid-column: span 2;
+    width: 190px;
+    height: 50px;
+    margin: 10px auto 0;
+    border: none;
+    border-radius: 30px;
+    background: #ff9200;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.book-btn:hover {
+    background: #e68200;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.15);
+}
+
+.bike-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bike-image img {
+    width: 100%;
+    max-width: 500px;
+    object-fit: contain;
+    transition: .4s;
+}
+
+.bike-image img:hover {
+    transform: scale(1.03);
+}
+
